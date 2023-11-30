@@ -1,5 +1,6 @@
 # Cadcontest2023
-This is the full code of the cadcontest2023_problemB which gets the "佳作" award
+This is the full code of the cadcontest2023_problemB which gets the "佳作" award.
+
 This code is able to handle 3D placement including macros and cells while minimizing HPWL
 The 3D IC concerning issues TSVs is also considered. 
 
