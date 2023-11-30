@@ -1,0 +1,15 @@
+
+############ u_chip_main_2 ############
+
+u_chip_main_2/u_mipirx_top		-> u_chip_main_2/u_inp_top
+u_chip_main_2/u_inp_top			-> u_chip_main_2/u_gsdn_iu_top
+u_chip_main_2/u_gsdn_iu_top		-> u_chip_main_2/u_AE_2D_top
+u_chip_main_2/u_gsdn_iu_top		-> u_chip_main_2/u_sram_con_top
+u_chip_main_2/u_sram_con_top		-> u_chip_main_2/u_depthdec_top
+u_chip_main_2/u_depthdec_top		-> u_chip_main_2/u_down_scaler_top
+u_chip_main_2/u_depthdec_top		-> u_chip_main_2/u_scaler_top_wrapper
+u_chip_main_2/u_depthdec_top		-> u_chip_main_2/u_upscaler_top_wrapper
+u_chip_main_2/u_down_scaler_top		-> u_chip_main_2/u_aes_tx
+u_chip_main_2/u_scaler_top_wrapper	-> u_chip_main_2/u_aes_tx
+u_chip_main_2/u_upscaler_top_wrapper	-> u_chip_main_2/u_aes_tx
+u_chip_main_2/u_aes_tx			-> u_chip_main_2/u_mipitx_top

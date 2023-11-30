@@ -1,0 +1,21 @@
+-benName
+	input benchmark name [necessary]
+	(string)
+
+
+-plotName
+	plot file (.pl/.def) name
+	(string): if didn't call, it will be set the same as benName [default]
+
+
+-parser
+	parser mode [necessary]
+	1: Himax format (def/lef)(2-D)
+
+
+-clusNum
+	maximum (upper bound) number of cluster nodes in final level
+	6000: [default]
+
+
+

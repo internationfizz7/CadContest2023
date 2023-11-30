@@ -1,0 +1,26 @@
+# USER-SPECIFIED VALUE
+VALUE = 0 ~ 1
+
+1 -DEFAULT = 1
+2 _SUB_REGION_AREA = 0.2
+3 _CHOOSE_Blank_Center_Dist = 0.01 
+4 _CHOOSE_Displacement = 0.04
+5 _CHOOSE_Center_Distance = 0.08
+6 _CHOOSE_Group_Distance = 0.03
+7 _CHOOSE_Type_Distance = 0.06
+8 _CHOOSE_Thickness = 0.01
+9 _CHOOSE_WireLength = 0.1
+
+END FILEs
+
+Y-C PARA
+1 -DEFAULT = 1
+2 _SUB_REGION_AREA = 0.1
+3 _CHOOSE_Blank_Center_Dist = 0.05 
+4 _CHOOSE_Displacement = 0.05
+5 _CHOOSE_Center_Distance = 0.06
+6 _CHOOSE_Group_Distance = 0.03
+7 _CHOOSE_Type_Distance = 0.06
+8 _CHOOSE_Thickness = 0.2
+9 _CHOOSE_WireLength = 0.1
+

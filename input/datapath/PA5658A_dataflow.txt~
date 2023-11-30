@@ -1,0 +1,14 @@
+
+############ TOP ############
+
+Top outside -> lineb_wrapper_top_u1
+
+lineb_wrapper_top_u1 -> reconf_sram_wrap_u1
+
+reconf_sram_wrap_u1 -> tx_wrapper_u1
+reconf_sram_wrap_u1 -> ip01_wrap_u1
+
+tx_wrapper_u1 -> Bottom outside
+
+
+

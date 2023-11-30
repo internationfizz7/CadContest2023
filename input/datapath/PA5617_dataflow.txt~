@@ -1,0 +1,11 @@
+
+############ pa5617_dig_u1 ############
+
+pa5617_dig_u1/od_core	->	pa5617_dig_u1/csc_top_u1
+pa5617_dig_u1/od_core	->	pa5617_dig_u1/gamma_ctrl_u1
+pa5617_dig_u1/od_core	->	pa5617_dig_u1/compress_top
+
+pa5617_dig_u1/compress_top	->	pa5617_dig_u1/sdm_top
+
+pa5617_dig_u1/gamma_ctrl_u1	->	pa5617_dig_u1/csc_top_u1
+pa5617_dig_u1/gamma_ctrl_u1	->	pa5617_dig_u1/od_core

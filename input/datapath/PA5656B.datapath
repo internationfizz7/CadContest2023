@@ -1,0 +1,45 @@
+
+############ TOP ############
+
+u_EDPRXPHY -> u_dptcon_dtop
+u_dptcon_dtop -> TIP_TX_PHY_U1
+
+############ u_dptcon_dtop ############
+
+u_dptcon_dtop/u_dprx_dtop -> u_dptcon_dtop/u_tcon_core
+u_dptcon_dtop/u_sbhost_mux -> u_dptcon_dtop/u_dpsysctrl
+u_dptcon_dtop/u_romdl_ctrl -> u_dptcon_dtop/u_dpsysctrl
+u_dptcon_dtop/u_fast_dl_wrap_v2 -> u_dptcon_dtop/u_dpsysctrl
+u_dptcon_dtop/u_dpsysctrl -> u_dptcon_dtop/u_reg_access_ctrl
+u_dptcon_dtop/u_reg_access_ctrl -> u_dptcon_dtop/u_tcon_core
+
+############ u_dptcon_dtop/u_tcon_core ############
+
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/agctrl_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/color_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/cabc_main_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/gamma_ctrl_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/dither_top_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/tdt_gate_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/swapctrl_tdt_u1
+u_dptcon_dtop/u_tcon_core/rx_wrapper_u1 -> u_dptcon_dtop/u_tcon_core/swapctrl_rgb_u1
+
+u_dptcon_dtop/u_tcon_core/agctrl_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/color_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/cabc_main_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/gamma_ctrl_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/dither_top_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/tdt_gate_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/swapctrl_tdt_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+u_dptcon_dtop/u_tcon_core/swapctrl_rgb_u1 -> u_dptcon_dtop/u_tcon_core/tx_wrapper_u1
+
+u_dptcon_dtop/u_tcon_core/agctrl_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/color_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/cabc_main_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/gamma_ctrl_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/dither_top_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/tdt_gate_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/swapctrl_tdt_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+u_dptcon_dtop/u_tcon_core/swapctrl_rgb_u1 -> u_dptcon_dtop/u_tcon_core/sysctrl_u2
+
+

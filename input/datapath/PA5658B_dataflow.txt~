@@ -1,0 +1,17 @@
+
+############ TOP ############
+Top_outside -> dram_partition_u1/demura_wrap_u1
+Top_outside -> dram_partition_u1/compress_wrap_u1
+
+dram_partition_u1/compress_wrap_u1 -> Bottom_outside
+
+od_partition_u1/pod2_wrap_u1 -> Bottom_outside
+
+od_partition_u1/od_wrap_u1 -> od_partition_u1/lod_wrap_u1
+od_partition_u1/od_wrap_u1 -> Bottom_outside
+
+od_partition_u1/lod_wrap_u1 -> od_partition_u1/od_wrap_u1
+od_partition_u1/lod_wrap_u1 -> Bottom_outside
+
+Bottom_outside -> od_partition_u1/od_wrap_u1
+
