@@ -2,7 +2,7 @@
 This is the full code of the cadcontest2023_problemB which gets the "佳作" award.
 
 This code is able to handle 3D placement including macros and cells while minimizing HPWL
-The 3D IC concerning issues TSVs is also considered. 
+The 3D IC concerning issue TSV is also considered. 
 
 Usage 
 Use make to compile the file
