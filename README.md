@@ -8,7 +8,7 @@ Problem spec: https://iccad-contest.org/Problems.html → Problem B
 
 ---
 
-## 快速上手（Docker — 推薦給新人）
+## 快速上手（Docker — 推薦第一次進來repo的人）
 
 > 執行檔是 Linux x86-64 binary，在 macOS / Windows 上需要透過 Docker 執行。
 
