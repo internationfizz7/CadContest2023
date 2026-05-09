@@ -88,8 +88,8 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
         IloNumVar DiffY(env3D);
         DiffX=IloNumVar(env3D,0,IloInfinity,ILOFLOAT);
         DiffY=IloNumVar(env3D,0,IloInfinity,ILOFLOAT);
-        model.add(DiffX>=ChipW-(double)nt.ChipWidth /1000 && DiffX>=(double)nt.ChipWidth /1000-ChipW);
-        model.add(DiffY>=ChipH-(double)nt.ChipHeight/1000 && DiffY>=(double)nt.ChipHeight/1000-ChipH);
+        model.add(DiffX>=ChipW-(double)nt.ChipWidth /AMP_PARA && DiffX>=(double)nt.ChipWidth /AMP_PARA-ChipW);
+        model.add(DiffY>=ChipH-(double)nt.ChipHeight/AMP_PARA && DiffY>=(double)nt.ChipHeight/AMP_PARA-ChipH);
 
         ///in order to minimize voltage island
         IloNumVarArray VI_LLX(env3D,nt.nVI);
@@ -174,11 +174,11 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
                 }
                 if(module3D[l][i]->flagPre==true)
                 {
-                    objB+=IloAbs(varsURX3D[l][i]*1000-varsW3D[l][i]*1000/2-module3D[l][i]->GCenterX)+
-                          IloAbs(varsURY3D[l][i]*1000-varsH3D[l][i]*1000/2-module3D[l][i]->GCenterY);
+                    objB+=IloAbs(varsURX3D[l][i]*AMP_PARA-varsW3D[l][i]*AMP_PARA/2-module3D[l][i]->GCenterX)+
+                          IloAbs(varsURY3D[l][i]*AMP_PARA-varsH3D[l][i]*AMP_PARA/2-module3D[l][i]->GCenterY);
                 }
-                objC+=IloAbs(varsURX3D[l][i]*1000-varsW3D[l][i]*1000/2-module3D[l][i]->GCenterX)+
-                      IloAbs(varsURY3D[l][i]*1000-varsH3D[l][i]*1000/2-module3D[l][i]->GCenterY);
+                objC+=IloAbs(varsURX3D[l][i]*AMP_PARA-varsW3D[l][i]*AMP_PARA/2-module3D[l][i]->GCenterX)+
+                      IloAbs(varsURY3D[l][i]*AMP_PARA-varsH3D[l][i]*AMP_PARA/2-module3D[l][i]->GCenterY);
             }
             if(nt.nVI>0)
             {
@@ -196,7 +196,7 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
             }
         }
         ///objective function
-        model.add(IloMinimize(  env3D, DiffX+DiffY +objC/10000000 ) );//-objA +objB +objC/10000000 +objD/10000 +objE/10000
+        model.add(IloMinimize(  env3D, DiffX+DiffY +objC/AMP_PARA/AMP_PARA ) );//-objA +objB +objC/10000000 +objD/10000 +objE/10000
 
 
 
@@ -233,20 +233,20 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
                 ///preplace module
                 if(module3D[l][i]->flagPre==true)
                 {
-                    model.add( varsW3D[l][i]*1000==module3D[l][i]->GmodW );
-                    model.add( varsH3D[l][i]*1000==module3D[l][i]->GmodH );
+                    model.add( varsW3D[l][i]*AMP_PARA==module3D[l][i]->GmodW );
+                    model.add( varsH3D[l][i]*AMP_PARA==module3D[l][i]->GmodH );
                 }
                 ///hard module
                 else if(module3D[l][i]->type=='0')
                 {
                     if(module3D[l][i]->GmodW!=module3D[l][i]->GmodH)
                     {
-                        model.add( (varsW3D[l][i]*1000==module3D[l][i]->GmodW&&varsH3D[l][i]*1000==module3D[l][i]->GmodH)
-                                || (varsW3D[l][i]*1000==module3D[l][i]->GmodH&&varsH3D[l][i]*1000==module3D[l][i]->GmodW) );
+                        model.add( (varsW3D[l][i]*AMP_PARA==module3D[l][i]->GmodW&&varsH3D[l][i]*AMP_PARA==module3D[l][i]->GmodH)
+                                || (varsW3D[l][i]*AMP_PARA==module3D[l][i]->GmodH&&varsH3D[l][i]*AMP_PARA==module3D[l][i]->GmodW) );
                     }
                     else
                     {
-                        model.add( varsW3D[l][i]*1000==module3D[l][i]->GmodW&&varsH3D[l][i]*1000==module3D[l][i]->GmodH );
+                        model.add( varsW3D[l][i]*AMP_PARA==module3D[l][i]->GmodW&&varsH3D[l][i]*AMP_PARA==module3D[l][i]->GmodH );
                     }
 
                 }
@@ -311,7 +311,6 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
                     }
                 }
 
-
                 ///non-overlap constraint
                 for(int j=0;j<nVertex3D[l];j++)
                 {
@@ -336,6 +335,28 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
             }
         }
 
+        ///module alignment
+        for(int i=0; i<nt.nAlign; i++)
+        {
+            int lowLayer = nt.aligns[i].lowLayer;
+            int highLayer = nt.aligns[i].highLayer;
+            int lowCplexIndex = nt.aligns[i].lowCplexIndex;
+            int highCplexIndex = nt.aligns[i].highCplexIndex;
+
+            if(nt.aligns[i].type == '0' || nt.aligns[i].type == '1' )
+            {
+                model.add( varsURX3D[ lowLayer ][ lowCplexIndex ]-varsW3D[ lowLayer ][ lowCplexIndex ]/2 ==
+                        varsURX3D[ highLayer ][ highCplexIndex ]-varsW3D[ highLayer ][ highCplexIndex ]/2 );
+                model.add( varsURY3D[ lowLayer ][ lowCplexIndex ]-varsH3D[ lowLayer ][ lowCplexIndex ]/2 ==
+                        varsURY3D[ highLayer ][ highCplexIndex ]-varsH3D[ highLayer ][ highCplexIndex ]/2 );
+            }
+
+            if(nt.aligns[i].type == '0')
+            {
+                model.add( varsW3D[ lowLayer ][ lowCplexIndex ] == varsW3D[ highLayer ][ highCplexIndex ] );
+                model.add( varsH3D[ lowLayer ][ lowCplexIndex ] == varsH3D[ highLayer ][ highCplexIndex ] );
+            }
+        }
         //cout<<"getchar";getchar();
 
 
@@ -387,16 +408,16 @@ int solveCPLEX3D(vector<int> nVertex3D,vector<vector <MODULE*> > module3D,vector
             {
                 if(module3D[l][i]->type=='0')///only for hard module
                 {
-                    module3D[l][i]->modW=(int)((valsW3D[l][i]+0.00001)*1000);
-                    module3D[l][i]->modH=(int)((valsH3D[l][i]+0.00001)*1000);
+                    module3D[l][i]->modW=(int)((valsW3D[l][i]+0.00001)*AMP_PARA);
+                    module3D[l][i]->modH=(int)((valsH3D[l][i]+0.00001)*AMP_PARA);
                 }
                 else
                 {
-                    module3D[l][i]->modW=(int)((valsW3D[l][i]-0.00051)*1000);///avoid deviation(round down)
-                    module3D[l][i]->modH=(int)((valsH3D[l][i]-0.00051)*1000);//-0.000001
+                    module3D[l][i]->modW=(int)((valsW3D[l][i]-0.00051)*AMP_PARA);///avoid deviation(round down)
+                    module3D[l][i]->modH=(int)((valsH3D[l][i]-0.00051)*AMP_PARA);//-0.000001
                 }
-                module3D[l][i]->LeftX=(int)((valsURX3D[l][i]-valsW3D[l][i]+0.00051)*1000);///avoid deviation(round off,4-5+)
-                module3D[l][i]->LeftY=(int)((valsURY3D[l][i]-valsH3D[l][i]+0.00051)*1000);
+                module3D[l][i]->LeftX=(int)((valsURX3D[l][i]-valsW3D[l][i]+0.00051)*AMP_PARA);///avoid deviation(round off,4-5+)
+                module3D[l][i]->LeftY=(int)((valsURY3D[l][i]-valsH3D[l][i]+0.00051)*AMP_PARA);
                 module3D[l][i]->CenterX=module3D[l][i]->LeftX+module3D[l][i]->modW/2;
                 module3D[l][i]->CenterY=module3D[l][i]->LeftY+module3D[l][i]->modH/2;
 

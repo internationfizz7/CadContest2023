@@ -144,7 +144,7 @@ class Legalization_INFO
 
 struct cmp_pair
 {
-    bool operator()(pair<int, int> a, pair<int, int> b)
+    bool operator()(pair<int, int> a, pair<int, int> b) const
     {
         if(a.first == b.first)
         {

@@ -1,0 +1,7 @@
+Run "make install" or "make release" will do the following:
+1. copy the *.hpp & *.h file to the "include" directory
+2. copy liblef.a, libclef.a, liblefzlib.a & libclefzlib.a to the "lib" directory
+3. copy lefdiff, lefrw & lefwrite to the "bin" directory
+
+Run "make clean" will remove all the *.o files and all the files have copied
+to "include", "lib" & "bin" directories.

@@ -1,0 +1,18 @@
+# Build outputs
+NCKUFplanner
+*.o
+
+# Editor backups
+*~
+*.cpp~
+
+# macOS
+.DS_Store
+
+# Program outputs
+*_out.txt
+Out.out
+ans.def
+
+# Generated intermediate files (Testcase only)
+Testcase/case*_201*

@@ -1,0 +1,2 @@
+[NOTE] "ar -r libflute.a *.o" can get ".a"
+[NOTE] Needs to remove the net which pin is on the same location!

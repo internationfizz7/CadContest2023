@@ -1,0 +1,7 @@
+Run "make install" or "make release" will do the following:
+1. copy the *.hpp & *.h file to the "include" directory
+2. copy libdef.a, libcdef.a, libdefzlib.a & libcdefzlib.a to the "lib" directory
+3. copy defdiff, defrw & defwrite to the "bin" directory
+
+Run "make clean" will remove all the *.o files and all the files have copied
+to "include", "lib" & "bin" directories.

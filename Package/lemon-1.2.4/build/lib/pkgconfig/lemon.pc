@@ -1,0 +1,10 @@
+prefix=/ift/home/m108pclu/lemon-1.2.4/build
+exec_prefix=/ift/home/m108pclu/lemon-1.2.4/build/bin
+libdir=/ift/home/m108pclu/lemon-1.2.4/build/lib
+includedir=/ift/home/m108pclu/lemon-1.2.4/build/include
+
+Name: LEMON
+Description: Library for Efficient Modeling and Optimization in Networks
+Version: 1.2.4
+Libs: -L${libdir} -lemon     
+Cflags: -I${includedir}

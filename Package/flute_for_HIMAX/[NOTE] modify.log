@@ -1,0 +1,15 @@
+
+2020.02.18 "flute.h"	modify POWV9.dat and POST9.dat file path to server (/ift1/home/Himax/Package/flute/)
+
+2020.03.12 "makefile"	creat a new makefile to compire .o file
+
+2020.03.20 "flute.h" 	modify "MAXD" 150 -> 10000 
+2020.03.20 "flute.c"	modify "ptp[d]->x = ptp[d]->y" = -999999 -> -99999999
+
+2020.03.21 "flute.h"	modify REMOVE_DUPLICATE_PIN 1 -> 0
+
+2020.06.01 "flute.cpp"	modify "max()" and "min" function to "flute_max()" and "flute_main()" to solve confilct by lemon
+
+2020.06.02 "flute.h"	modify REMOVE_DUPLICATE_PIN 0 -> 1 it can remove redundant node 
+			but it will segment fault if the net all the node are at the same position, plsese remove the net!
+

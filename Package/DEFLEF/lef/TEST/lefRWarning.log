@@ -1,0 +1,294 @@
+Warnings from file: complete.5.7.lef
+
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 2
+WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file complete.5.7.lef at line 3
+WARNING (LEFPARS-2009): USEMINSPACING PIN statement is obsolete in version 5.6 or later.
+ The USEMINSPACING PIN statement will be ignored. See file complete.5.7.lef at line 7
+WARNING (LEFPARS-2068): DEFINES statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 11
+WARNING (LEFPARS-2068): DEFINES statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 12
+WARNING (LEFPARS-2011): SLOTWIREWIDTH statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 128
+WARNING (LEFPARS-2012): SLOTWIRELENGTH statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 129
+WARNING (LEFPARS-2013): SLOTWIDTH statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 130
+WARNING (LEFPARS-2014): SLOTLENGTH statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 131
+WARNING (LEFPARS-2015): MAXADJACENTSLOTSPACING statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 132
+WARNING (LEFPARS-2016): MAXCOAXIALSLOTSPACING statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 133
+WARNING (LEFPARS-2018): SPLITWIREWIDTH statement is obsolete in version 5.7 or later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.7 or later. See file complete.5.7.lef at line 134
+WARNING (LEFPARS-2079): CURRENTDEN statement is obsolete in version 5.2 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.2 or later. See file complete.5.7.lef at line 177
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file complete.5.7.lef at line 572
+WARNING (LEFPARS-2020): FOREIGN statement in VIA is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 573
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 717
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 719
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 720
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 722
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 723
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 724
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 735
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 736
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 737
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 740
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 741
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 742
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 748
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 752
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 753
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 756
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 757
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 767
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 770
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 816
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 818
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 819
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 823
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 824
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 825
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 830
+WARNING (LEFPARS-2023): OVERHANG statement will be translated into similar ENCLOSURE rule See file complete.5.7.lef at line 831
+WARNING (LEFPARS-2024): METALOVERHANG statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 832
+WARNING (LEFPARS-2029): RESISTANCE RPERSQ statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 840
+WARNING (LEFPARS-2030): CAPACITANCE CPERSQDIST statement is obsolete in version 5.6. and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 841
+WARNING (LEFPARS-2031): EDGECAPACITANCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 842
+WARNING (LEFPARS-2030): CAPACITANCE CPERSQDIST statement is obsolete in version 5.6. and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 847
+WARNING (LEFPARS-2029): RESISTANCE RPERSQ statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 853
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file complete.5.7.lef at line 863
+WARNING (LEFPARS-2020): FOREIGN statement in VIA is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 864
+WARNING (LEFPARS-2020): FOREIGN statement in VIA is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 876
+WARNING (LEFPARS-2070): UNIVERSALNOISEMARGIN statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 987
+WARNING (LEFPARS-2071): EDGERATETHRESHOLD1 statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 988
+WARNING (LEFPARS-2072): EDGERATETHRESHOLD2 statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 989
+WARNING (LEFPARS-2073): EDGERATESCALEFACTOR statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 990
+WARNING (LEFPARS-2074): NOISETABLE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 999
+WARNING (LEFPARS-2077): A SPACING SAMENET section is defined but it is not legal in a LEF 5.7 version file.
+It will be ignored which will probably cause real DRC violations to be ignored, and may
+cause false DRC violations to occur.
+
+To avoid this warning, and correctly handle these DRC rules, you should modify your
+LEF to use the appropriate SAMENET keywords as described in the LEF/DEF 5.7
+manual under the SPACING statements in the LAYER (Routing) and LAYER (Cut)
+sections listed in the LEF Table of Contents. See file complete.5.7.lef at line 1009
+WARNING (LEFPARS-2027): MINFEATURE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1018
+WARNING (LEFPARS-2028): DIELECTRIC statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1020
+WARNING (LEFPARS-2026): IRDROP statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1022
+WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1122
+WARNING (LEFPARS-2042): LEQ statement in MACRO is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1126
+WARNING (LEFPARS-2038): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1132
+WARNING (LEFPARS-2043): FOREIGN statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1137
+WARNING (LEFPARS-2043): FOREIGN statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1138
+WARNING (LEFPARS-2043): FOREIGN statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1139
+WARNING (LEFPARS-2043): FOREIGN statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1140
+WARNING (LEFPARS-2044): LEQ statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1141
+WARNING (LEFPARS-2056): MACRO INPUTNOISEMARGIN statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1145
+WARNING (LEFPARS-2054): MACRO OUTPUTNOISEMARGIN statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1146
+WARNING (LEFPARS-2055): MACRO OUTPUTRESISTANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1147
+WARNING (LEFPARS-2045): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1148
+WARNING (LEFPARS-2046): MACRO LEAKAGE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, r emove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1149
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1150
+WARNING (LEFPARS-2058): MACRO RESISTANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1151
+WARNING (LEFPARS-2059): MACRO PULLDOWNRES statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1152
+WARNING (LEFPARS-2053): MACRO TIEOFFR statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1153
+WARNING (LEFPARS-2052): MACRO VHI statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1154
+WARNING (LEFPARS-2051): MACRO VLO statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1155
+WARNING (LEFPARS-2062): MACRO RISEVOLTAGETHRESHOLD statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1156
+WARNING (LEFPARS-2063): MACRO FALLVOLTAGETHRESHOLD statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1157
+WARNING (LEFPARS-2047): MACRO RISETHRESH statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1158
+WARNING (LEFPARS-2048): MACRO FALLTHRESH statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1159
+WARNING (LEFPARS-2049): MACRO RISESATCUR statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1160
+WARNING (LEFPARS-2050): MACRO FALLSATCUR statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1161
+WARNING (LEFPARS-2060): MACRO CURRENTSOURCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1162
+WARNING (LEFPARS-2064): MACRO IV_TABLES statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1173
+WARNING (LEFPARS-2065): Either PATH, RECT or POLYGON statement is a required in MACRO/PIN/PORT. See file complete.5.7.lef at line 1185
+WARNING (LEFPARS-2043): FOREIGN statement in MACRO PIN is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1189
+WARNING (LEFPARS-2046): MACRO LEAKAGE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, r emove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1220
+WARNING (LEFPARS-2063): MACRO FALLVOLTAGETHRESHOLD statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1221
+WARNING (LEFPARS-2062): MACRO RISEVOLTAGETHRESHOLD statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1222
+WARNING (LEFPARS-2060): MACRO CURRENTSOURCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1223
+WARNING (LEFPARS-2066): MACRO TIMING statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1370
+WARNING (LEFPARS-2037): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file complete.5.7.lef at line 1375
+WARNING (LEFPARS-2038): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1377
+WARNING (LEFPARS-2066): MACRO TIMING statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1477
+WARNING (LEFPARS-2038): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1518
+WARNING (LEFPARS-2066): MACRO TIMING statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1601
+WARNING (LEFPARS-2038): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1612
+WARNING (LEFPARS-2066): MACRO TIMING statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1739
+WARNING (LEFPARS-2038): MACRO POWER statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file complete.5.7.lef at line 1790
+WARNING (LEFPARS-2065): Either PATH, RECT or POLYGON statement is a required in MACRO/PIN/PORT. See file complete.5.7.lef at line 1868
